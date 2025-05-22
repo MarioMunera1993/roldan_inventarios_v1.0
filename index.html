@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Desktop (1200px y arriba) */
+        @media screen and (min-width: 1200px) {
+            .site-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            }
+            .site-content {
+                flex: 1;
+            }
+            .aside{
+                height: 84.8vh;
+            }
+            
+        }
+
+        .aside__nav_ul{
+                display: flex;
+                align-items: center;
+                align-content: stretch;
+                flex-wrap: wrap;
+        }
+
+        .aside__nav_ul_item{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            background-color: #47413a;
+            width: 100%;
+        }
+
+        .aside__nav_ul_item a{
+            padding: 15%;
+            height: 100%;
+            background-color: #47413a;
+            width: 100%;
+        }
+
+        .aside__nav_ul_item:hover a{
+            background-color: #64523d;
+            cursor: pointer;
+        }
+                
+    </style>
+</head>
+<body>
+    <div class="site-wrapper">
+        <!-- Header con color azul -->
+        <header class="header bg-primary text-white py-3">
+            <div class="container">
+                <a href="./index.html" class="d-flex align-items-center">
+                    <img src="./images/LOGO GRUPO ROLDAN 1000X1000.png" alt="Logo" class="img-fluid" style="max-height: 50px;">
+                </a>
+            </div>
+        </header>
+
+        <!-- Contenido principal -->
+        <div class="site-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Aside con color verde -->
+                    <aside class="aside bg-success text-white col-md-3 p-3">
+                        <nav class="aside_nav">
+                            <ul class="aside__nav_ul list-unstyled">
+                                <li class="aside__nav_ul_item mb-3">
+                                    <a href="./html/Computadores.html" class="text-white text-decoration-none">Computadores</a>
+                                </li>
+                                <li class="aside__nav_ul_item mb-3">
+                                    <a href="./html/Telefonos.html" class="text-white text-decoration-none">Telefonos</a>
+                                </li>
+                                <li class="aside__nav_ul_item mb-3">
+                                    <a href="./html/Impresoras.html" class="text-white text-decoration-none">Impresoras</a>
+                                </li>
+                                <li class="aside__nav_ul_item mb-3">
+                                    <a href="#" class="text-white text-decoration-none">Otros</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+
+                    <!-- Main con color gris claro -->
+                    <main class="container col-md-9 bg-light p-4">
+                        <!-- Aquí irá el contenido principal -->
+                        <h1 class="text-primary">Bienvenido al Sistema de Inventario</h1>
+                        <p class="text-muted">Gestiona tus equipos de manera eficiente</p>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer con color negro -->
+        <footer class="pie bg-dark text-white text-center py-3">
+            &copy; Todos los derechos reservados Creado Por Mario Munera
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
